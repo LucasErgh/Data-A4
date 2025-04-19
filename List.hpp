@@ -15,18 +15,26 @@ public:
 
     ~vectorList();
 
-    node* front();
+    node* front() const;
 
-    node* back();
+    node* back() const;
+
+    void pushBack();
+
+    void pushFront();
+
+    node* popBack();
+    
+    node* popFront();
+
+    bool isEmpty() const;
+
+    int getSize() const;
 
 private:
     node* head;
     node* tail;
     int size;
-
-    void pushBack();
-
-    void pushFront();
 };
 
 #endif
