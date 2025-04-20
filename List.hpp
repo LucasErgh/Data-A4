@@ -11,7 +11,7 @@ struct node{
 
 class vectorList{
 public:
-    vectorList(int numElems = 5);
+    vectorList(int size = 0);
 
     ~vectorList();
 
@@ -19,13 +19,13 @@ public:
 
     node* back() const;
 
-    void pushBack();
+    void pushBack(std::vector<int> vec = std::vector<int>());
 
-    void pushFront();
+    void pushFront(std::vector<int> vec = std::vector<int>());
 
-    node* popBack();
+    void popBack();
     
-    node* popFront();
+    void popFront();
 
     bool isEmpty() const;
 
